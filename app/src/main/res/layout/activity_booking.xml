@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_directions"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Agendamento"
+                android:textStyle="bold"
+                android:textSize="28sp"/>
+        </LinearLayout>
+
+        <!-- grupos simples -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#5B3AA6" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Manicure" android:textColor="#FFFFFF" android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F3EFFF" android:orientation="vertical" android:padding="12dp">
+            <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alongamento" android:checked="true"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="de R$ 220,00, 2 h 30 min"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="#5B3AA6" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pedicure" android:textColor="#FFFFFF" android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F3EFFF" android:orientation="vertical" android:padding="12dp">
+            <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Esmaltação" android:checked="true"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="de R$ 50,00, 30 min"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="#5B3AA6" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SPA" android:textColor="#FFFFFF" android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F3EFFF" android:orientation="vertical" android:padding="12dp">
+            <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Spa dos Pés" android:checked="true"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="de R$ 120,00, 1 h"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="#5B3AA6" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sobrancelha" android:textColor="#FFFFFF" android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F3EFFF" android:orientation="vertical" android:padding="12dp">
+            <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Micropigmentação" android:checked="true"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="de R$ 250,00, 1 h 30 min"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="#5B3AA6" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lábios" android:textColor="#FFFFFF" android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F3EFFF" android:orientation="vertical" android:padding="12dp">
+            <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Revitalização Labial" android:checked="true"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="de R$ 230,00, 2 h"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione uma data"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:background="@drawable/card_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha o horário:"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"/>
+
+        <GridLayout
+            android:id="@+id/gridTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="5"
+            android:alignmentMode="alignBounds"
+            android:useDefaultMargins="true"
+            android:layout_marginTop="6dp">
+
+            <!-- chips de horário -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="08:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="08:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="09:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="09:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="17:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="17:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="19:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="19:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_white"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Serviços Selecionados:"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Duração Total:"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Preço Total:"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAgendar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:text="Agendar"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_pill"/>
+    </LinearLayout>
+</ScrollView>

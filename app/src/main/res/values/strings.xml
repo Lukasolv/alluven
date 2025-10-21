@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alluven</string>
+    <string name="login">Entrar</string>
+    <string name="register">Cadastrar</string>
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="name">Nome</string>
+    <string name="phone">Telefone</string>
+    <string name="menu">Menu</string>
+    <string name="about">Sobre Nós</string>
+    <string name="services">Serviços</string>
+    <string name="contact">Contato</string>
+    <string name="search">Busca</string>
+    <string name="profile">Perfil</string>
+    <string name="schedule">Agendar</string>
+
+</resources>

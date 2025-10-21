@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_profile" android:title="Perfil" android:icon="@android:drawable/ic_menu_myplaces"/>
+    <item android:id="@+id/nav_schedule" android:title="Agendar" android:icon="@android:drawable/ic_menu_my_calendar"/>
+    <item android:id="@+id/nav_about" android:title="Sobre Nós" android:icon="@android:drawable/ic_menu_info_details"/>
+    <item android:id="@+id/nav_contact" android:title="Contato" android:icon="@android:drawable/ic_menu_call"/>
+    <item android:id="@+id/nav_search" android:title="Busca" android:icon="@android:drawable/ic_menu_search"/>
+</menu>
