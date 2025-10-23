@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#F5F1FA">
+    android:background="@drawable/card_white"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="#5B3AA6"
-        android:gravity="center_vertical"
-        android:paddingHorizontal="16dp">
+    <TextView
+        android:id="@+id/txtServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Micropigmentação"
+        android:textStyle="bold"
+        android:textSize="16sp" />
 
-        <ImageView
-            android:id="@+id/btnMenu"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@android:drawable/ic_menu_sort_by_size"
-            app:tint="#FFFFFF" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="Serviços"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textColor="#FFFFFF"/>
-    </LinearLayout>
-
+    <TextView
+        android:id="@+id/txtServiceInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 250,00 • 1h30m"
+        android:layout_marginTop="4dp" />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvServices"
         android:layout_width="match_parent"

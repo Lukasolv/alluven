@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- onde você injeta a tela (inflate/setContentView) -->
+
     <FrameLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
@@ -17,7 +18,7 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         android:background="#4A2F8B"
-        android:itemTextColor="#FFFFFFFF"
-        android:itemIconTint="#FFFFFFFF"/>
-    <!-- opcional: android:menu="@menu/menu_client" / "@menu/menu_admin" -->
+        app:itemTextColor="@color/aw_white"
+        app:itemIconTint="@color/aw_white"/>
+
 </androidx.drawerlayout.widget.DrawerLayout>

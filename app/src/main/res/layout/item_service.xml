@@ -2,24 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/card_white"
     android:orientation="vertical"
+    android:background="@drawable/card_white"
     android:padding="16dp"
     android:layout_marginBottom="12dp"
     android:elevation="6dp">
 
+
     <TextView
-        android:id="@+id/txtServiceName"
+        android:id="@+id/txtNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Micropigmentação"
         android:textStyle="bold"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
+
 
     <TextView
-        android:id="@+id/txtServiceInfo"
+        android:id="@+id/txtPreco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R$ 250,00 • 1h30m"
-        android:layout_marginTop="4dp"/>
+        android:layout_marginTop="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnRemover"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Remover"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_pill"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
 </LinearLayout>

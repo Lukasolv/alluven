@@ -20,8 +20,7 @@
                 android:layout_height="220dp"
                 android:background="@color/aw_purple">
 
-                <!-- Hero/banner -->
-                <!-- TODO: troque por seu banner -->
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -67,7 +66,7 @@
                 android:weightSum="4"
                 android:gravity="center">
 
-                <!-- 4 miniaturas -->
+
                 <ImageView android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1" android:src="@android:drawable/ic_menu_gallery" android:background="@drawable/bg_card_soft" android:padding="8dp"/>
                 <Space android:layout_width="8dp" android:layout_height="0dp"/>
                 <ImageView android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1" android:src="@android:drawable/ic_menu_gallery" android:background="@drawable/bg_card_soft" android:padding="8dp"/>

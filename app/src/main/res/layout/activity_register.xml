@@ -14,7 +14,7 @@
             android:layout_height="240dp"
             android:background="@drawable/bg_login_header">
 
-            <!-- TODO: @drawable/logo -->
+
             <ImageView
                 android:layout_width="160dp"
                 android:layout_height="100dp"

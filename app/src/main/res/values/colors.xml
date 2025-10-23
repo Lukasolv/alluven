@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="aw_purple">#5B3AA6</color>
-    <color name="aw_purple_dark">#4A2F8B</color>
-    <color name="aw_purple_light">#8E73D9</color>
-    <color name="aw_white">#FFFFFFFF</color>
-    <color name="aw_black">#FF2E2E2E</color>
-    <color name="aw_gray">#FFAAAAAA</color>
-    <color name="aw_bg">#F5F1FA</color>
-    <color name="aw_shadow">#33000000</color>
+
+    <color name="purple_500">#5B3AA6</color>
+    <color name="purple_700">#43297D</color>
+    <color name="purple_soft">#F5F1FA</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <color name="aw_purple">@color/purple_500</color>
+    <color name="aw_purple_dark">#3A256B</color>
+    <color name="aw_purple_light">#E9E0F7</color>
+
+    <color name="aw_bg">@color/purple_soft</color>
+    <color name="aw_white">@color/white</color>
+    <color name="aw_black">#2E2E2E</color>
 </resources>

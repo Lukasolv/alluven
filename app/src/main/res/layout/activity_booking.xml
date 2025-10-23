@@ -27,7 +27,6 @@
                 android:textSize="28sp"/>
         </LinearLayout>
 
-        <!-- grupos simples -->
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#5B3AA6" android:padding="12dp">
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Manicure" android:textColor="#FFFFFF" android:textStyle="bold"/>
         </LinearLayout>
@@ -93,7 +92,7 @@
             android:useDefaultMargins="true"
             android:layout_marginTop="6dp">
 
-            <!-- chips de horário -->
+
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="08:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="08:30" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="09:00" android:gravity="center" android:padding="10dp" android:background="@drawable/shape_input"/>
